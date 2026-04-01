@@ -1,0 +1,103 @@
+# Model Card — AquaRate
+
+**Scenario:** AquaRate: Consumer Water Quality Rating System
+**Authors:** Thania Brinks
+**Date:** 4/1/2026
+
+---
+
+## 1. Model Details
+
+> What model or API is being used? Who built it? What version? What type of
+> model — classification, prediction, generation, optimization? When was it
+> developed?
+
+The AquaRate mobile app is a predictive model that provides consumers of bottled and packaged water an A-F rating, where A is the best rating and F is the worst, based on water quality factors. This model was developed in 2025 and is on version 3.0.
+
+---
+
+## 2. Intended Use
+
+> What is the primary task? Who are the intended users? What decisions does
+> the system inform? In what context is it deployed?
+
+The main task is to support consumer bottled and packaged water purchase decision by providing an A-F rating. The intended users are health-conscious consumers, especially parents of young children and immuno-compromised individuals, in the USA. The intended use case is for consumers to be able to scan the products bar code using the mobile app to see the generated rating so they may decide whih brand of water to purchase, likely while in the store. 
+
+---
+
+## 3. Out-of-Scope Uses
+
+> What should this system NOT be used for? What populations, settings, or
+> decisions are outside its design? What misuses are foreseeable?
+
+AquaRate, while it uses real world water quality data to make predictions, it is not backed by any government agency, and has no regulatory authority. The score provided should not be used as a definitive measure of water quality, only an estimate, nor should the rating be treated as a water quality regulation. Purchase decisions made using the rating should not be considered medical advice or a substitute for recommendations provided by a licensed healthcare provider.   
+
+---
+
+## 4. Training Data
+
+> What data was used to build or train this model? How was it collected? What
+> populations, geographies, languages, and time periods does it cover? What
+> is missing?
+
+The data used to train the model comes from multiple sources 1) Water quality testing reports provided by bottled water brands to the FDA and available freely on the FDA website, 2) EPA water quality reports by municipality, publicly available from the EPA website, 3) Lab testin data purchased from Certified laboratories, a third-party food and beverage testing laboratory, as well as 4) climate data available from the National Weather Service website and geospatial data avalable from USGS website.  
+
+---
+
+## 5. Evaluation Data & Metrics
+
+> How was performance measured? What metrics were used — accuracy, sensitivity,
+> specificity, F1, AUC, RMSE? On what test set? Is it independent from the
+> training data?
+
+[Your response]
+
+---
+
+## 6. Quantitative Analysis
+
+> Performance broken down by relevant subgroups — age, sex, race/ethnicity,
+> geography, income, language. Does the model perform differently across
+> these groups? Where are the gaps?
+
+[Your response]
+
+---
+
+## 7. Ethical Considerations
+
+> Bias risks, informed consent, privacy, potential harms, equity implications.
+> Does this system reproduce or amplify existing disparities? Who bears the
+> consequences when it fails?
+
+[Your response]
+
+---
+
+## 8. Limitations & Caveats
+
+> Known failure modes, edge cases, what the model does not capture. Conditions
+> where it performs poorly. Assumptions baked into the design that may not
+> hold in all deployment contexts.
+
+[Your response]
+
+---
+
+## 9. Human Oversight
+
+> Who reviews outputs before action is taken? Human in the loop, on the loop,
+> or out of the loop? What is the escalation path when the model is wrong?
+> Can it act autonomously — and should it?
+
+[Your response]
+
+---
+
+## 10. Temporal Validity
+
+> When does this model need retraining or re-evaluation? What triggers a
+> review — new data, policy change, population shift, outbreak? How does
+> performance degrade over time?
+
+[Your response]
